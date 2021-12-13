@@ -1,0 +1,82 @@
+
+/* Mobile first design */
+/* Font style Kumbh Sans */
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    max-width: 100%;
+    width: 100%;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.container {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* section1 start */
+.section1, .menu-bar {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.menu-bar {
+    padding: 0 1rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.8rem auto;
+}
+.icon-HamburgerMenu {
+    margin-top: 0.5rem;
+}
+.image-avatar {
+    width: 8%;
+}
+.icon-cart {
+    width: 6%;
+}
+/* styling Hamburger-menu when open */
+.navigation {
+    display: none;
+    width: 100%;
+    background-color: hsl(0, 0%, 0%);
+}
+.links {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+.links a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 0.5rem;
+    font-size: 0.8em;
+}
+.links a:hover {
+    color: hsl(220, 14%, 75%);
+}
+/* section1 end */
+/* section2 start */
+.section2, .carusel-box, .slider {
+    width: 100%;
+}
+.img-product {
+    width: 100%;
+    height: auto;
+}
+
+/* section2 end */
+
+
+
+
