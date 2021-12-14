@@ -66,16 +66,50 @@ html {
     color: hsl(220, 14%, 75%);
 }
 /* section1 end */
-/* section2 start */
-.section2, .carusel-box, .slider {
+/* section2 is made by Bootstrap */
+/* section3 start */
+.section3 {
     width: 100%;
 }
-.img-product {
+.info {
+    margin-top: 1rem;
+    text-transform: uppercase;
+    color: hsl(26, 100%, 55%);
+    font-weight: 700;
+}
+.title {
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+.description {
+    font-weight: 400;
+    color: hsl(219, 9%, 45%);
+}
+/* section3 end */
+/* section4 start */
+.section4 {
     width: 100%;
     height: auto;
+    display: flex;
+    flex-direction: row;
+}
+.price-div {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+.oldPrice-div {
+    width: 20%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
 }
 
-/* section2 end */
+/* section4 end */
+
 
 
 
