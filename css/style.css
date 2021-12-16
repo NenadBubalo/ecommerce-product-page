@@ -29,6 +29,9 @@ html {
     display: flex;
     flex-direction: column;
 }
+.navigation-desktop, .section1-underline {
+    display: none;
+}
 .menu-bar {
     padding: 0 1rem;
     flex-direction: row;
@@ -37,7 +40,7 @@ html {
     margin: 0.8rem auto;
 }
 .icon-HamburgerMenu {
-    margin-top: 0.5rem;
+    margin-top: 0.1rem;
 }
 .image-avatar {
     width: 8%;
@@ -135,7 +138,7 @@ html {
 }
 .count-item {
     width: 100%;
-    height: 8vh;
+    height: 4vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -144,20 +147,15 @@ html {
     padding: 0.5rem 0.8rem 0.5rem 0.8rem;
     border-radius: 100rem;
 }
-.icon-minus {
+.icon-minus, .icon-plus {
     width: 5%;
-    height: 1vh;
-}
-.icon-plus {
-    width: 5%;
-    height: 2.5vh;
 }
 .number {
     padding-top: 0.4rem;
 }
 .addCart {
     width: 100%;
-    height: 8vh;
+    height: 4vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -165,7 +163,6 @@ html {
     background-color: hsl(26, 100%, 55%);
     border-radius: 100rem;
     margin-top: 1rem;
-    margin-bottom: 2rem;
     border: none;
 }
 .addCart-text {
@@ -175,6 +172,57 @@ html {
     margin-left: 1rem;
 }
 /* section5 end */
+/* Media Breakpoints */
+/** 768px oder höher */
+@media (min-width: 48em) {
+    .icon-cart {
+        width: 4%;
+    }
+
+    .image-avatar {
+        width: 6%;
+    }
+
+    .icon-minus, .icon-plus {
+        width: 3%;
+    }
+}
+/** 992px oder höher */
+@media (min-width: 62em) {
+    .hamburgerMenu-div {
+        display: none;
+    }
+    .navigation-desktop {
+        display: flex;
+        flex-direction: row;
+    }
+    .navigation-desktop a {
+        margin-right: 1rem;
+        text-decoration: none;
+        color: hsl(219, 9%, 45%);
+    }
+    .icon-cart {
+        width: 3%;
+    }
+    .image-avatar {
+        width: 5%;
+    }
+    .section1-underline {
+        display: inherit;
+        width: 100%;
+        height: 0.1vh;
+        background-color: hsl(220, 14%, 75%);
+        margin: 2rem 0 4rem 0;
+    }
+}
+/** 1200px oder höher */
+@media (min-width: 75em) {
+
+}
+
+
+
+
 
 
 
