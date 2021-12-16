@@ -171,6 +171,9 @@ html {
     font-weight: 700;
     margin-left: 1rem;
 }
+.icon-minus:hover, .icon-plus:hover {
+    cursor: pointer;
+}
 /* section5 end */
 /* Media Breakpoints */
 /** 768px oder höher */
@@ -195,6 +198,7 @@ html {
     .navigation-desktop {
         display: flex;
         flex-direction: row;
+        margin-right: 17rem;
     }
     .navigation-desktop a {
         margin-right: 1rem;
@@ -214,10 +218,54 @@ html {
         background-color: hsl(220, 14%, 75%);
         margin: 2rem 0 4rem 0;
     }
+    .main-div {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .carousel, .left-side {
+        width: 50%;
+        padding: 1.5rem;
+    }
+    .carousel-inner {
+        border-radius: 1rem;
+    }
+    .section4 {
+        flex-direction: column;
+    }
+    .oldPrice-div {
+        justify-content: flex-start;
+    }
+    .section5 {
+        flex-direction: row;
+    }
+    .count-item {
+        width: 40%;
+        margin: 1rem 0.5rem 0 0;
+    }
+    .addCart {
+        width: 60%;
+        margin-left: 0.5rem;
+    }
+    .icon-minus, .icon-plus {
+        width: 6%;
+    }
 }
 /** 1200px oder höher */
 @media (min-width: 75em) {
-
+    .navigation-desktop {
+        margin-right: 40rem;
+    }
+    .icon-cart {
+        width: 2%;
+    }
+    .left-side {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .count-item, .addCart {
+        height: 7vh;
+    }
 }
 
 
