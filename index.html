@@ -29,8 +29,13 @@
                 <a href="#">About</a>
                 <a href="#">Contact</a>
             </div>
-        <img src="/images/icon-cart.svg" alt="" class="icon-cart">
-        <img src="/images/image-avatar.png" alt="" class="image-avatar">
+           <div class="iconCart-div position-relative">
+               <img src="/images/icon-cart.svg" alt="" class="icon-cart" id="icon-cart" onclick="opBasket()">
+               <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger span" id="spanContainer">
+                    0
+               </span>
+           </div>
+            <img src="/images/image-avatar.png" alt="" class="image-avatar">
         </div>
         <div class="navigation" id="navigation">
             <div class="links" id="links">
@@ -72,6 +77,11 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+    <!-- cart-div start -->
+    <div class="cart-div" id="cart-div">
+
+    </div>
+    <!-- cart-div end -->
     <!-- section2 end -->
         <div class="left-side">
     <!-- section3 start -->
@@ -111,11 +121,11 @@
     <!-- section5 start -->
     <div class="section5">
         <div class="count-item">
-            <img src="/images/icon-minus.svg" alt="" class="icon-minus">
-            <h6 class="number">0</h6>
-            <img src="/images/icon-plus.svg" alt="" class="icon-plus">
+            <img src="/images/icon-minus.svg" alt="" class="icon-minus" onclick="countItemDown()">
+            <h6 class="number" id="number">0</h6>
+            <img src="/images/icon-plus.svg" alt="" class="icon-plus" onclick="countItemUp()">
         </div>
-        <button class="addCart">
+        <button class="addCart" onclick="addToCart()">
             <img src="/images/icon-cart.svg" alt="" class="icon-cart-section5">
             <h6 class="addCart-text">Add to cart</h6>
         </button>
