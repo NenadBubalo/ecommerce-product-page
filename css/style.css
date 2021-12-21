@@ -139,6 +139,9 @@ html {
     border: none;
     border-radius: 2rem;
     margin-bottom: 1rem;
+    padding: 0.2rem 0 0.2rem 0;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
 }
 /* cart-div design end */
 /* section3 start */
