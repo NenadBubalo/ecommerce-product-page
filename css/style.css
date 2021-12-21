@@ -86,9 +86,23 @@ html {
     position: absolute;
     width: 80%;
     height: 20vh;
-    background-color: #0dcaf0;
+    background-color: hsl(223, 64%, 98%);
     top: 3.2rem;
     left: 2.2rem;
+}
+.empty-basket {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.empty-text {
+    color: hsl(219, 9%, 45%);
+}
+.full-basket {
+    display: none;
+    width: 100%;
 }
 /* cart-div design end */
 /* section3 start */
