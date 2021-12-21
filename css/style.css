@@ -85,7 +85,7 @@ html {
     display: none;
     position: absolute;
     width: 80%;
-    height: 20vh;
+    height: 30%;
     background-color: hsl(223, 64%, 98%);
     top: 3.2rem;
     left: 2.2rem;
@@ -103,6 +103,42 @@ html {
 .full-basket {
     display: none;
     width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.items-price {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70%;
+    margin-top: 1rem;
+    align-items: center;
+}
+.image-thumbnail {
+    width: 30%;
+    height: 5vh;
+    padding: 0 1rem 0 1rem;
+}
+.icon-delete {
+    width: 3%;
+    height: 10%;
+    margin-left: 1rem;
+}
+.textAndPrice {
+    display: flex;
+    flex-direction: column;
+}
+.textAndPrice-text {
+    font-size: 0.9rem;
+}
+.buy-button {
+    width: 85%;
+    height: 20%;
+    background-color: hsl(26, 100%, 55%);
+    border: none;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
 }
 /* cart-div design end */
 /* section3 start */

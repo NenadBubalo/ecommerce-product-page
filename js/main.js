@@ -41,6 +41,8 @@ function addToCart() {
     newCounter += counter;
     let convert = newCounter.toString();
     numberCart.innerHTML = convert;
+    emptyBasket.style.display = 'none';
+    fullBasket.style.display = 'flex';
 }
 
 /* open and close the basket */
@@ -54,17 +56,3 @@ function opBasket() {
     }
 }
 
-/* show items in basket */
-function fullBaskets() {
-    if(numberCart.innerHTML === '0') {
-        emptyBasket.style.display = 'none';
-        fullBasket.style.display = 'flex';
-    }
-    else {
-        emptyBasket.style.display = 'flex';
-        fullBasket.style.display = 'none';
-    }
-}
-
-
-/* initialise Methods */
