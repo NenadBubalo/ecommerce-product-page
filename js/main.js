@@ -5,6 +5,10 @@ let numberCart = document.getElementById('spanContainer');
 let newCounter = 0;
 let emptyBasket = document.getElementById('empty-basket');
 let fullBasket = document.getElementById('full-basket');
+let totalItemPrice = document.getElementById('textAndPrice-price');
+let totalPrice = document.getElementById('total-price');
+let thanksText = document.getElementById('empty-text');
+
 
 /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon in the mobile version */
 function myFunction() {
@@ -43,6 +47,7 @@ function addToCart() {
     numberCart.innerHTML = convert;
     emptyBasket.style.display = 'none';
     fullBasket.style.display = 'flex';
+    showPrice();
 }
 
 /* open and close the basket */
@@ -56,3 +61,26 @@ function opBasket() {
     }
 }
 
+/* add the price to the number of items in the basket */
+function showPrice() {
+    let price = 125 * newCounter;
+    totalItemPrice.innerHTML = '$125.00 x ' + newCounter;
+    totalPrice.innerText = 'Total Price: $' + price + '.00';
+}
+
+/* delete all items in the basket */
+function deleteBasket() {
+    numberCart.innerHTML = '0';
+    newCounter = 0;
+    emptyBasket.style.display = 'flex';
+    fullBasket.style.display = 'none';
+}
+
+/* after press the buy button */
+function buying() {
+    emptyBasket.style.display = 'flex';
+    fullBasket.style.display = 'none';
+    thanksText.innerHTML = 'Thank you for buying our Product';
+    numberCart.innerHTML = '0';
+    newCounter = 0;
+}

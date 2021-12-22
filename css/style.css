@@ -98,6 +98,7 @@ html {
     align-items: center;
 }
 .empty-text {
+    text-align: center;
     color: hsl(219, 9%, 45%);
 }
 .full-basket {
@@ -125,6 +126,9 @@ html {
     height: 10%;
     margin-left: 1rem;
 }
+.icon-delete:hover {
+    cursor: pointer;
+}
 .textAndPrice {
     display: flex;
     flex-direction: column;
@@ -141,6 +145,9 @@ html {
     margin-bottom: 1rem;
     padding: 0.2rem 0 0.2rem 0;
     color: hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+.total-price {
     font-weight: 700;
 }
 /* cart-div design end */

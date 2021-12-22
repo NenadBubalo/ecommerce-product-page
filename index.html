@@ -80,7 +80,7 @@
     <!-- cart-div start -->
     <div class="cart-div" id="cart-div">
         <div class="empty-basket" id="empty-basket">
-            <h4 class="empty-text">
+            <h4 class="empty-text" id="empty-text">
                 Your cart is empty.
             </h4>
         </div>
@@ -90,10 +90,11 @@
                 <div class="textAndPrice">
                     <span class="textAndPrice-text">Autumn Limited Edition</span>
                     <span class="textAndPrice-price" id="textAndPrice-price"></span>
+                    <span class="total-price" id="total-price"></span>
                 </div>
-                <img src="/images/icon-delete.svg" alt="" class="icon-delete" id="icon-delete">
+                <img src="/images/icon-delete.svg" alt="" class="icon-delete" onclick="deleteBasket()">
             </div>
-            <button class="buy-button" id="buy-button">
+            <button class="buy-button" onclick="buying()">
                 Checkout
             </button>
         </div>
