@@ -86,7 +86,7 @@ html {
     position: absolute;
     width: 80%;
     height: 30%;
-    background-color: hsl(223, 64%, 98%);
+    background-color: #F2F2F2;
     top: 3.2rem;
     left: 2.2rem;
 }
@@ -356,6 +356,21 @@ html {
     .carousel {
         width: 40%;
         height: 40%;
+    }
+    .cart-div {
+        width: 30%;
+        height: 60%;
+        left: 60rem;
+        top: 4rem;
+    }
+    .items-price {
+        justify-content: center;
+    }
+    .image-thumbnail {
+        height: 8vh;
+    }
+    .icon-delete {
+        height: 8%;
     }
 
 }

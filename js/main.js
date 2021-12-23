@@ -30,7 +30,7 @@ function countItemUp() {
 }
 
 /* Count the number of items down */
-function countItemDown() {
+function countItemDown() {  
     if(number.innerHTML === '0') {
         number.innerHTML = '0';
     }
@@ -47,6 +47,7 @@ function addToCart() {
     numberCart.innerHTML = convert;
     emptyBasket.style.display = 'none';
     fullBasket.style.display = 'flex';
+    number.innerHTML = '0';
     showPrice();
 }
 
